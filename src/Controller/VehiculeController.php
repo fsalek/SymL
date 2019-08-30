@@ -21,7 +21,7 @@ class VehiculeController extends AbstractController
     public function index(VehiculeRepository $vehiculeRepository, Request $request): Response
     {
         $result= null;
-        $vehiculeSearsh= $request->request->get('destination_searsh');
+        $vehiculeSearsh= $request->request->get('vehicule_searsh');
         if($vehiculeSearsh){
             $result= $vehiculeRepository->findByNameAndDescription($vehiculeSearsh);
         }else{

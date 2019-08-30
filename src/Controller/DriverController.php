@@ -21,7 +21,7 @@ class DriverController extends AbstractController
     public function index(DriverRepository $driverRepository, Request $request): Response
     {
         $result= null;
-        $driverSearsh= $request->request->get('destination_searsh');
+        $driverSearsh= $request->request->get('driver_searsh');
         if($driverSearsh){
             $result= $driverRepository->findByNameAndDescription($driverSearsh);
         }else{
