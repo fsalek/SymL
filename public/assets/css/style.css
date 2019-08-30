@@ -1,0 +1,13 @@
+body{
+    background-color: #aacd4e;
+}
+p.vehicule{
+    color: #ffffff;
+    text-shadow: 3px 2px black;
+}
+tbody{
+    font-size: 20px;
+}
+h2{
+    text-align: center;
+}

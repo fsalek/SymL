@@ -1,0 +1,16 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('assets/css/home.css') }}">
+{% endblock %}
+{% block body %}
+
+    {% include 'public/partials/_form.html.twig' %}
+    {% include 'public/partials/_caroussel.html.twig' %}
+    {% include 'public/partials/_accueil.html.twig' %}
+
+
+{% endblock %}
+
+{% block title %}
+
+{% endblock %}

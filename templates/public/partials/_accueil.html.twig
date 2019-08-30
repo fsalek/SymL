@@ -1,0 +1,41 @@
+
+    <h1>Tableau </h1>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th>Nombre de conducteurs</th>
+            <th>Nombre de véhicules</th>
+            <th>Nombre de véhicules non loués</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <ul>
+                    {% for driver in drivers %}
+                        <li>{{ driver.contenu }}</li>
+                    {% endfor %}
+                </ul>
+            </td>
+            <td>Mercedes</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>Ghorri</td>
+            <td>Citroen</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>Salek</td>
+            <td>Oppel</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>Eric</td>
+            <td>Peugot</td>
+            <td>9</td>
+        </tr>
+        </tbody>
+    </table>
+
+    </table>
